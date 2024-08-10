@@ -15,7 +15,7 @@ export default function GetStarted() {
 
   function submitHandler(data){
     console.log(data)
-    fetch(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/sheet`, {
+    fetch(`/api/sheet`, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
