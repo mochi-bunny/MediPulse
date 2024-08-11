@@ -1,5 +1,5 @@
 import { google } from "googleapis";
-async function  handler(req, res) {
+export async function  handler(req, res) {
     if (req.method === 'POST'){
         const {Name, Email, Concern} = req.body
         console.log(Name, Email, Concern)
@@ -34,5 +34,3 @@ async function  handler(req, res) {
 }
 
 }
-
-export  handler;
